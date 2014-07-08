@@ -3,7 +3,7 @@
 <?php get_template_part('template-part', 'facebook-init'); ?>
 <?php get_template_part('template-part', 'head'); ?>
 <?php get_template_part('template-part', 'topnav'); ?>
-
+<?php get_template_part('template-part', 'navigation'); ?>
 <!-- start content container -->
 <div class="row dmbs-content">
 
@@ -69,13 +69,10 @@
 
 <?php endif; ?>
 
-</div>
-</div>
-<!-- end content container -->
+</div> <?php //end main content ?>
 
-<?php //get the right sidebar ?>
 <?php get_sidebar( 'right' ); ?>
-
+</div> <?php //end main container ?>
 
 <?php get_footer(); ?>
 </body>
