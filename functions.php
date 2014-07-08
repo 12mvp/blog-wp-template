@@ -109,15 +109,7 @@ add_editor_style('css/editor-style.css');
             'after_title' => '</h3>',
         ));
 
-        register_sidebar(
-            array(
-            'name' => 'footer-widget',
-            'id' => 'footer-widget',
-            'before_widget' => '<section id="%1$s" class="widget %2$s">',
-            'after_widget' => '</section>',
-            'before_title' => '<h3>',
-            'after_title' => '</h3>',
-        ));
+
 
 ////////////////////////////////////////////////////////////////////
 // Register hook and action to set Main content area col-md- width based on sidebar declarations
@@ -165,5 +157,16 @@ function devdmbootstrap3_main_content_width() {
 ////////////////////////////////////////////////////////////////////
 
 if ( ! isset( $content_width ) ) $content_width = 800;
+
+function the_post_thumbnail_caption() {
+global $post;
+
+$thumbnail_id = get_post_thumbnail_id($post->ID);
+$thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+
+if ($thumbnail_image && isset($thumbnail_image[0])) {
+echo '<span>'.$thumbnail_image[0]->post_excerpt.'</span>';
+}
+}
 
 ?>

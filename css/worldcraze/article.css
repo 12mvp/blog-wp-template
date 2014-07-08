@@ -1,0 +1,49 @@
+.post h3 {
+  margin-left: 44px;
+  font-family: 'Exo 2', sans-serif;
+}
+.post .center-img {
+  margin-top: 10px;
+  color: #5c5c5c;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+}
+.post .center-img img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.post .paragraph-article {
+  margin-left: 44px;
+  margin-top: 15px;
+  color: #5c5c5c;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+}
+.post .meta .author-article {
+  margin-left: 44px;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+  border-style: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #4a81a1;
+}
+.post .meta .info-article {
+  margin-left: 44px;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+}
+.post .comment-article {
+  float: right;
+  background-color: white;
+  border-style: none;
+  color: #4a81a1;
+  font-family: 'Exo 2', sans-serif;
+}
+.post .one-meta {
+  margin-right: 20px;
+}

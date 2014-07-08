@@ -1,0 +1,83 @@
+@realwhite: #ffffff  ;
+@whitelight: #f6fcfc  ;
+@white: #f0f0f0  ;
+@realwhite: #ffffff  ;
+@greylight: #c4c9cb  ;
+@grey: #6f6d6d  ;
+@blackdark: #313435  ;
+@blacklight: #434647  ;
+@red: #ef534f;
+@green: #7aa760  ;
+@greendark: #61854c  ;
+@bluelight: #daecf6  ;
+@blue: #5492b4  ;
+@bluedark: #4a81a0  ;
+@bluefb: #3B5998  ;
+@vert: #2fa3ad  ;
+
+.vert-font {
+    color: @vert;
+}
+
+.box-shadow (@a: 0px, @b: 2px, @c: 10px, @d:rgba(0,0,0,0.15)  )
+{
+    -moz-box-shadow: @a @b @c @d;
+    -webkit-box-shadow: @a @b @c @d;
+    -o-box-shadow: @a @b @c @d;
+    box-shadow: @a @b @c @d;
+}
+.blur (@blur: 2px)
+{
+    filter: blur(@blur);
+    -webkit-filter: blur(@blur);
+    -moz-filter: blur(@blur);
+    -o-filter: blur(@blur);
+    -ms-filter: blur(@blur);	
+}
+
+.radius (@radius: 20px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.radius-top (@radius: 20px) {
+    -webkit-border-top-left-radius:@radius;
+    -webkit-border-top-right-radius:@radius;
+    -moz-border-radius-topleft:@radius;
+    -moz-border-radius-topright:@radius;
+    border-top-left-radius:@radius;
+    border-top-right-radius:@radius;
+}
+
+.font-ptsans {
+    font-family: 'PT Sans';
+}
+
+.font-exo2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.font-title {
+    .font-ptsans;
+    font-weight: bold;
+}
+
+.word-break
+{
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+}
+
+.hyphens (@a: auto)
+{
+    -ms-hyphens: @a;
+    -moz-hyphens: @a;
+    -webkit-hyphens: @a;
+    hyphens: @a;
+}
+
+@import "navbar.less";

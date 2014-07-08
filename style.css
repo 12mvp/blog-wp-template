@@ -20,6 +20,14 @@ devdmbootstrap3 is distributed under the terms of the GNU GPL v3.
 
 /****************** Special Blank CSS classes for child themes to use without disturbing core bootstrap rules ****************/
 
+@import url("css/worldcraze/article.css");
+@import url("css/worldcraze/basic.css");
+@import url("css/worldcraze/breadcrumbs.css");
+@import url("css/worldcraze/footer.css");
+@import url("css/worldcraze/header.css");
+@import url("css/worldcraze/pagination.css");
+@import url("css/worldcraze/navbar.css");
+
 .dmbs-container {
 
 }
