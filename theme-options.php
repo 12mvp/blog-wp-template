@@ -7,7 +7,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
 ////////////////////////////////////////////////////////////////////
 
     function theme_options_menu() {
-        add_theme_page( 'DevDm Theme' . __('Options','devdmbootstrap3'), 'DevDm' . __('Options','devdmbootstrap3'), 'manage_options', 'devdm-theme-options', 'devdm_theme_options' );
+        add_theme_page( 'WorldCraze Theme Options', __('Template Options','devdmbootstrap3'), 'manage_options', 'worldcraze-theme-options', 'devdm_theme_options' );
     }
     add_action( 'admin_menu', 'theme_options_menu' );
 
@@ -16,7 +16,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
     function toolbar_link_to_mypage( $wp_admin_bar ) {
         $args = array(
             'id'    => 'devdm_theme_options',
-            'title' => __('DevDm Options','devdmbootstrap3'),
+            'title' => __('Template Options','devdmbootstrap3'),
             'href'  => home_url() . '/wp-admin/themes.php?page=devdm-theme-options',
             'meta'  => array( 'class' => 'devdm-theme-options' ),
             'parent' => 'site-name'
@@ -116,13 +116,14 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
 ////////////////////////////////////////////////////////////////////
 
     $dm_options = array(
-        'author_credits' => true,
         'right_sidebar' => true,
         'right_sidebar_width' => 3,
         'left_sidebar' => true,
         'left_sidebar_width' => 3,
         'show_header' => true,
-        'show_postmeta' => true
+        'show_postmeta' => true,
+        'footer_widget' => true,
+        'init_facebook' => true
     );
 
     $dm_sidebar_sizes = array(
@@ -177,12 +178,6 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
             $input['left_sidebar_width'] = $prev;
         }
 
-        if ( ! isset( $input['author_credits'] ) ) {
-            $input['author_credits'] = null;
-        } else {
-            $input['author_credits'] = ( $input['author_credits'] == 1 ? 1 : 0 );
-        }
-
         if ( ! isset( $input['show_header'] ) ) {
             $input['show_header'] = null;
         } else {
@@ -206,7 +201,16 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
         } else {
             $input['show_postmeta'] = ( $input['show_postmeta'] == 1 ? 1 : 0 );
         }
-
+        if ( ! isset( $input['show_footer_widget'] ) ) {
+            $input['show_footer_widget'] = null;
+        } else {
+            $input['show_footer_widget'] = ( $input['show_footer_widget'] == 1 ? 1 : 0 );
+        }
+        if ( ! isset( $input['init_facebook'] ) ) {
+            $input['init_facebook'] = null;
+        } else {
+            $input['init_facebook'] = ( $input['init_facebook'] == 1 ? 1 : 0 );
+        }
         return $input;
     }
 
@@ -226,11 +230,9 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
         //get our logo
         $logo = get_template_directory_uri() . '/img/logo.png'; ?>
            <div class="wrap">
-               <a href="<?php echo $developer_uri ?>" target="_blank"><img src="<?php echo $logo; ?>" class="dm-logo" title="Created by Danny Machal @ DevDm.com" /></a>
 
             <div class="icon32" id="icon-options-general"></div>
 
-            <h2><a href="<?php echo $developer_uri ?>" target="_blank">DevDmBootstrap3</a></h2>
 
                <?php
                if ( ! isset( $_REQUEST['settings-updated'] ) )
@@ -287,10 +289,16 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
                     </td>
                 </tr>
 
-                <tr valign="top"><th scope="row"><?php _e('Give Danny His Credit?','devdmbootstrap3') ;?></th>
+                 <tr valign="top"><th scope="row"><?php _e('Footer widget','devdmbootstrap3') ;?></th>
                     <td>
-                        <input type="checkbox" id="author_credits" name="dm_options[author_credits]" value="1" <?php checked( true, $settings['author_credits'] ); ?> />
-                        <label for="author_credits"><?php _e('Show me some love and keep a link to DevDm.com in your footer.','devdmbootstrap3') ;?></label>
+                        <input type="checkbox" id="show_footer_widget" name="dm_options[show_footer_widget]" value="1" <?php checked( true, $settings['show_footer_widget'] ); ?> />
+                        <label for="show_footer_widget"><?php _e('Override footer facebook widget','devdmbootstrap3') ;?></label>
+                    </td>
+                </tr>
+                <tr valign="top"><th scope="row"><?php _e('Init facebook','devdmbootstrap3') ;?></th>
+                    <td>
+                        <input type="checkbox" id="init_facebook" name="dm_options[init_facebook]" value="1" <?php checked( true, $settings['init_facebook'] ); ?> />
+                        <label for="init_facebook"><?php _e('Initialize facebook','devdmbootstrap3') ;?></label>
                     </td>
                 </tr>
             </table>

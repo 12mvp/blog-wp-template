@@ -1,7 +1,7 @@
+ <body <?php body_class(); ?>>
 <?php get_header(); ?>
-
+ <?php get_template_part('template-part', 'facebook-init'); ?>
 <?php get_template_part('template-part', 'head'); ?>
-
 <?php get_template_part('template-part', 'topnav'); ?>
 
 <!-- start content container -->
