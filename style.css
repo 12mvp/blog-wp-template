@@ -27,6 +27,7 @@ devdmbootstrap3 is distributed under the terms of the GNU GPL v3.
 @import url("css/worldcraze/header.css");
 @import url("css/worldcraze/pagination.css");
 @import url("css/worldcraze/navbar.css");
+@import url("css/worldcraze/custom.css");
 
 .dmbs-container {
 

@@ -6,6 +6,18 @@
         <div class="container-fluid navbarsection">
             <!-- Brand and toggle get grouped for better mobile display -->
             
+            <nav class="nav navbar-nav navbar-right">
+                        <form class="form-inline spaceforsearch" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputEmail2">Search on blog</label>
+                                <input type="email" class="form-control  searchbar" id="exampleInputEmail2" placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-link"><span class="glyphicon glyphicon-search loupe"></span></button>
+                            </div>
+                        </form>         
+                    </nav>
             <?php
             wp_nav_menu( array(
                 'theme_location'    => 'main_menu',

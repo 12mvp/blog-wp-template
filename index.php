@@ -55,6 +55,10 @@
 
 <?php endwhile; ?>
 <?php posts_nav_link(); ?>
+<?php
+if ( function_exists('wp_bootstrap_pagination') )
+wp_bootstrap_pagination();
+?>
 <?php else: ?>
 
   <?php get_404_template(); ?>

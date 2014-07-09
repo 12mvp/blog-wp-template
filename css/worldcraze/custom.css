@@ -1,0 +1,30 @@
+body
+{
+	font-family: 'Exo 2', sans-serif !important;
+	color: #4a81a1 !important;
+}
+
+.wpt_widget_content
+{
+  border: 1px solid #4a81a1 !important;
+}
+
+.wpt_widget_content .tab-content li
+{
+	border-bottom-color: #4a81a1 !important;	
+}
+
+.wpt_widget_content .tab_title.selected a 
+
+{
+	background-color: #4a81a1 !important;
+	color:white;
+}
+
+.wpt_widget_content .tab_title a 
+
+{
+	background-color: white !important;
+	border-bottom-color: #4a81a1 !important;
+}
+
