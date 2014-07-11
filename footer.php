@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-3">
-            <h5>{{ 'HOME_LOCALISATION_PARAMS' | translate }}</h5>
+            <h5>Paramètres de localisation</h5>
             <form action="javascript;" method="POST">
               <div class="language">
                 <select name="language" ng-model="selectedLanguage" ng-change="selectLanguage(selectedLanguage)">
@@ -34,21 +34,21 @@
   </div>
 
   <div class="col-xs-3">
-    <h5>{{ 'HOME_SOCIETY' | translate }}</h5>
+    <h5>Société</h5>
 
     <ul>
-      <li><a href="/aboutus" translate>PANE_ABOUTUS</a></li>
-      <li><a href="/faq" translate>PANE_FAQ</a></li>
-      <li><a href="/customs" translate>PANE_CUSTOMS</a></li>
+      <li><a href="/aboutus">Qui sommes-nous ?</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/customs">Douanes</a></li>
       <!--<li><a href="/tutorial">Tutoriel</a></li>-->
-      <li><a href="/community" translate>PANE_COMMUNITY</a></li>
-      <li><a href="/terms" translate>PANE_TERMS</a></li>
+      <li><a href="/community">Nos règles</a></li>
+      <li><a href="/terms">Condition Générales d'utilisation</a></li>
   </ul>
 
 </div>
 
 <div class="col-xs-2">
-    <h5>{{ 'HOME_FOLLOW_US' | translate }}</h5>
+    <h5>Suivez-nous</h5>
 
     <ul>
       <li><a target="_blank" href="https://twitter.com/worldcraze">Twitter</a></li>

@@ -5,6 +5,8 @@
       <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header"><a class="navbar-brand" href="/">WorldCraze</a></div><!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="" class="ng-binding"><i class="glyphicon glyphicon-edit"></i> Blog <span class="label label-danger ng-binding" ng-show="nbNewTasks" style="display: none;">0</span></a></li>
+          <li class="divider-vertical"></li>
           <li><a href="/tasks" class="ng-binding"><i class="glyphicon glyphicon-edit"></i> Tâches <span class="label label-danger ng-binding" ng-show="nbNewTasks" style="display: none;">0</span></a></li>
           <li class="divider-vertical"></li>
           <li><a href="/catalog"><button class="btn btn-default find-product ng-binding">Rechercher un produit</button></a></li>

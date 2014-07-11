@@ -16,15 +16,11 @@
 .loupe {
   color: #4a81a1;
   font-size: 21px;
-  top:0px !important;
-  border-style: none !important;
+  top: 0px !important;
 }
-
-.noneborder-button:hover
-{
-  border: none !important;
+button:focus {
+  outline: 0 !important;
 }
-
 .spaceforsearch {
   margin-top: 7px;
 }

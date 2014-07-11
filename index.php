@@ -18,14 +18,18 @@
         <div class="post">
           <h3 class="page-header"><?php the_title() ;?></h3>
         </div>
-
         <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail("large");?>
-        <div class="clear"></div>
+        <div class="center-img" >
+          <?php the_post_thumbnail( array(447,260) ) ?>
+          <?php the_post_thumbnail_caption(); ?> 
+        </div> 
       <?php endif; ?>
+      <div class="paragraph-article">
       <?php the_content(); ?>
+    </div>
       <?php wp_link_pages(); ?>
       <?php get_template_part('template-part', 'postmeta'); ?>
+      <br>
       <?php comments_template(); ?>
     </div>
     <?php
@@ -35,12 +39,14 @@
       <h3 class="page-header">
         <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'devdmbootstrap3' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
       </h3>
+      <?php if ( has_post_thumbnail() ) : ?>
       <div class="center-img">
-        <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( array(447,260) ) ?>
-        <?php the_post_thumbnail_caption(); ?>
-      <?php endif; ?>
-    </div>
+        <a href="<?php the_permalink();?>">
+          <?php the_post_thumbnail( array(447,260) ) ?>
+        </a>
+        <?php the_post_thumbnail_caption(); ?>  
+      </div>
+    <?php endif; ?>
     <div class="paragraph-article">
       <?php the_content(); ?>
     </div>
@@ -54,10 +60,9 @@
 <?php  endif; ?>
 
 <?php endwhile; ?>
-<?php posts_nav_link(); ?>
 <?php
 if ( function_exists('wp_bootstrap_pagination') )
-wp_bootstrap_pagination();
+  wp_bootstrap_pagination();
 ?>
 <?php else: ?>
 
@@ -80,7 +85,7 @@ wp_bootstrap_pagination();
 * generally use this hook to reference JavaScript files.
 */
 wp_footer();
-?>
 
+?>
 </body>
 </html>

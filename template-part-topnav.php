@@ -7,16 +7,15 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             
             <nav class="nav navbar-nav navbar-right">
-                        <form class="form-inline spaceforsearch" role="form">
+                        <form method="get" class="form-inline spaceforsearch" role="form" action="<?php bloginfo('home'); ?>/">
                             <div class="form-group">
-                                <label class="sr-only" for="exampleInputEmail2">Search on blog</label>
-                                <input type="email" class="form-control  searchbar" id="exampleInputEmail2" placeholder="Enter email">
+                                <input type="text" class="form-control searchbar" placeholder="Search" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s">
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn btn-link"><span class="glyphicon glyphicon-search loupe"></span></button>
+                                <button type="submit" class="btn btn-link noneborder-button"><span class="glyphicon glyphicon-search loupe"></span></button>
                             </div>
-                        </form>         
+                        </form>        
                     </nav>
             <?php
             wp_nav_menu( array(
