@@ -9,7 +9,7 @@
             <span class="glyphicon glyphicon-edit"></span> <span class="one-meta"><?php edit_post_link(__('Edit','devdmbootstrap3')); ?></span>
             <span class="glyphicon glyphicon-circle-arrow-right"></span> <span class="one-meta"><?php _e('Posted In','devdmbootstrap3'); ?>: <?php the_category(', '); ?></span>
             <?php if( has_tag() ) : ?>
-                <span class="glyphicon glyphicon-tags"></span> 
+                <span class="glyphicon glyphicon-tags"></span>
                 <?php the_tags(); ?>
             <?php endif; ?>
             <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>

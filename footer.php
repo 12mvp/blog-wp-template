@@ -6,7 +6,7 @@
             <h5>Paramètres de localisation</h5>
             <form action="javascript;" method="POST">
               <div class="language">
-                <select name="language" ng-model="selectedLanguage" ng-change="selectLanguage(selectedLanguage)">
+                <select name="language">
                   <option value="en">English</option>
                   <option value="fr">Français</option>
                   <option value="br">Brazilian / Portuguese</option>
@@ -16,19 +16,19 @@
               >
 
               <div class="currency" >
-                <select name='currency' ng-model="selectedCurrency" ng-change="selectCurrency(selectedCurrency)">
+                <select name='currency'>
                   <option value="EUR">&euro; - EUR</option>
                   <option value="USD">$ - USD</option>
                   <option value="GBP">£ - GBP</option>
                   <option value="JPY">¥ - JPY</option>
               </select>
 
-              <div class="icon"><i class="fa" ng-class="'fa-' + defaultToCurrency.code|lowercase"></i></div>
+              <div class="icon"><i class="fa"></i></div>
           </div>
       </form>
 
       <div class="footer-lang">
-          <a href="/en">WorldCraze.com in English</a>
+          <a href="https://worldcraze.com/en">WorldCraze.com in English</a>
       </div>
 
   </div>
@@ -37,12 +37,11 @@
     <h5>Société</h5>
 
     <ul>
-      <li><a href="/aboutus">Qui sommes-nous ?</a></li>
-      <li><a href="/faq">FAQ</a></li>
-      <li><a href="/customs">Douanes</a></li>
-      <!--<li><a href="/tutorial">Tutoriel</a></li>-->
-      <li><a href="/community">Nos règles</a></li>
-      <li><a href="/terms">Condition Générales d'utilisation</a></li>
+      <li><a href="https://worldcraze.com/aboutus">Qui sommes-nous ?</a></li>
+      <li><a href="https://worldcraze.com/faq">FAQ</a></li>
+      <li><a href="https://worldcraze.com/customs">Douanes</a></li>
+      <li><a href="https://worldcraze.com/community">Nos règles</a></li>
+      <li><a href="https://worldcraze.com/terms">Condition Générales d'utilisation</a></li>
   </ul>
 
 </div>
