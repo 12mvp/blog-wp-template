@@ -8,7 +8,7 @@
             <nav class="nav navbar-nav navbar-right">
                         <form method="get" class="form-inline spaceforsearch" role="form" action="<?php bloginfo('home'); ?>/">
                             <div class="form-group">
-                                <input type="text" class="form-control searchbar" placeholder="Search" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s">
+                                <input type="text" class="form-control searchbar" placeholder="Search" value="<?php echo esc_html($s, 1); ?>" name="s" id="s">
                             </div>
 
                             <div class="form-group">

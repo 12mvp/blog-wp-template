@@ -1,8 +1,8 @@
 <div>
 <?php // Breadcrumb navigation
 if (is_page() && !is_front_page() || is_single() || is_category()) {
-echo '<ul class="breadcrumb widgethouse"><li><a href="/" class="glyphicon glyphicon-home colorhouse"></a></li>';
-echo '<li><a href="/blog">Blog</a></li>';
+echo '<ul class="breadcrumb widgethouse"><li><a href="https://worldcraze.com" class="glyphicon glyphicon-home colorhouse"></a></li>';
+echo '<li><a href="/">Blog</a></li>';
 if (is_page()) {
 $ancestors = get_post_ancestors($post);
 
@@ -34,7 +34,7 @@ echo '<li><a href="'.get_category_link($category[0]->cat_ID).'"
 } elseif (is_front_page()) {
  // Front page
 	echo '<ul class="breadcrumb widgethouse">';
-	echo '<li><a href="/" class="glyphicon glyphicon-home colorhouse"></a></li>';
+	echo '<li><a href="https://worldcraze.com" class="glyphicon glyphicon-home colorhouse"></a></li>';
 	echo '<li class="active">Blog</li>';
 	echo '</ul>';
 }

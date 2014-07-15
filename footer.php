@@ -4,16 +4,12 @@
         <div class="row">
           <div class="col-xs-3">
             <h5>Paramètres de localisation</h5>
+
             <form action="javascript;" method="POST">
               <div class="language">
-                <select name="language">
-                  <option value="en">English</option>
-                  <option value="fr">Français</option>
-                  <option value="br">Brazilian / Portuguese</option>
-              </select>
-              <div class="icon"><i class="fa fa-globe"></i></div>
-              </div
-              >
+                <?php get_template_part('template-part', 'language-switcher-nav'); ?>
+                <div class="icon"><i class="fa fa-globe"></i></div>
+              </div>
 
               <div class="currency" >
                 <select name='currency'>
@@ -60,7 +56,7 @@
 </div>
 
 <div class="col-xs-4">
-    <div class="fb-like-box" data-href="https://www.facebook.com/WorldCraze" data-width="360" data-height="200" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+    <?php get_template_part('template-part', 'sidebar-footer-widget'); ?>
 </div>
 
 </div>

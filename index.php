@@ -16,12 +16,12 @@
       if ( is_single() ) : ?>
       <div <?php post_class(); ?>>
         <div class="post">
-          <h3 class="page-header"><?php the_title() ;?></h3>
+          <h1 class="page-header"><?php the_title() ;?></h1>
         </div>
         <?php if ( has_post_thumbnail() ) : ?>
         <div class="center-img" >
           <?php the_post_thumbnail( array(447,260) ) ?>
-          <?php the_post_thumbnail_caption(); ?> 
+          <?php the_post_thumbnail_caption(); ?>
         </div> 
       <?php endif; ?>
       <div class="paragraph-article">
@@ -44,7 +44,7 @@
         <a href="<?php the_permalink();?>">
           <?php the_post_thumbnail( array(447,260) ) ?>
         </a>
-        <?php the_post_thumbnail_caption(); ?>  
+        <?php the_post_thumbnail_caption(); ?>
       </div>
     <?php endif; ?>
     <div class="paragraph-article">
@@ -76,7 +76,6 @@ if ( function_exists('wp_bootstrap_pagination') )
 </div> <?php //end row ?>
 
 </div>
-
 <?php get_footer(); ?>
 
 <?php
@@ -85,7 +84,6 @@ if ( function_exists('wp_bootstrap_pagination') )
 * generally use this hook to reference JavaScript files.
 */
 wp_footer();
-
 ?>
 </body>
 </html>

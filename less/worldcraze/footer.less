@@ -7,70 +7,70 @@ footer
 	.footer {
 		border-top: 1px solid #8e8e8e  ;
 		padding: 20px 0px;
+
+		a {
+			font-family: 'Exo 2', sans-serif;
+		}
+		h5 {
+			font-family: 'Exo 2', sans-serif;
+			margin: 0px 0px 20px 0px;
+		}
+		select {
+			width: 180px;
+			margin-bottom: 10px;
+			height: 32px;
+			border: 1px solid #e1e8ed  ;
+			border-radius: 6px;
+			font-family: 'Exo 2', sans-serif;
+			color: #738089  ;
+			outline: none;
+			padding: 0px 0px 0px 50px;
+			background: #ffffff  ; /* Old browsers */
+			background:
+			-moz-linear-gradient(top, #ffffff   0%, #f5f8fa   100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff  ), color-stop(100%,#f5f8fa  )); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #ffffff   0%,#f5f8fa   100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #ffffff   0%,#f5f8fa   100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #ffffff   0%,#f5f8fa   100%); /* IE10+ */
+			background: linear-gradient(to bottom, #ffffff   0%,#f5f8fa   100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff  ', endColorstr='#f5f8fa  ',GradientType=0 ); /* IE6-9 */
+		}
+		.language {
+			position: relative;
+			.icon, .currency {
+				position: absolute;
+				top: 10px;
+				left: 130px;
+			}
+		}
+		.currency {
+			position: relative;
+		}
+		.footer-lang {
+			margin-top: 10px;
+			a {
+				margin-left: 22px;
+				color: #468cc8  ;
+				text-decoration: underline;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0px;
+		}
 	}
 
-	.footer a {
-		font-family: 'Exo 2', sans-serif;
+	.language, .currency {
+		select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 1px;
+		text-overflow: '';
+		appearance: none;
+		padding: 6px 50px 6px 12px !important;
+		background: url(../../img/dropdown-step.png) no-repeat 97% center !important;
+		text-indent: 9999999;
+		height: 40px !important;
 	}
-
-	.footer h5 {
-		font-family: 'Exo 2', sans-serif;
-		margin: 0px 0px 20px 0px;
-	}
-
-	.footer select {
-		width: 180px;
-		margin-bottom: 10px;
-		height: 32px;
-		border: 1px solid #e1e8ed  ;
-		border-radius: 6px;
-		font-family: 'Exo 2', sans-serif;
-		color: #738089  ;
-		outline: none;
-		padding: 0px 0px 0px 50px;
-		background: #ffffff  ; /* Old browsers */
-		background:
-		-moz-linear-gradient(top, #ffffff   0%, #f5f8fa   100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff  ), color-stop(100%,#f5f8fa  )); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #ffffff   0%,#f5f8fa   100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, #ffffff   0%,#f5f8fa   100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #ffffff   0%,#f5f8fa   100%); /* IE10+ */
-		background: linear-gradient(to bottom, #ffffff   0%,#f5f8fa   100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff  ', endColorstr='#f5f8fa  ',GradientType=0 ); /* IE6-9 */
-	}
-
-	.footer .language {
-		position: relative;
-	}
-
-	.footer .currency {
-		position: relative;
-	}
-
-	.footer .language .icon {
-		position: absolute;
-		top: 10px;
-		left: 130px;
-	}
-
-	.footer .currency .icon {
-		position: absolute;
-		top: 10px;
-		left: 130px;
-	}
-
-	.footer .footer-lang {
-		margin-top: 10px;
-	}
-
-	.footer .footer-lang a {
-		margin-left: 22px;
-		color: #468cc8  ;
-		text-decoration: underline;
-	}
-
-	.footer ul {
-		list-style: none;
-		padding: 0px;
-	}
+}	
 }

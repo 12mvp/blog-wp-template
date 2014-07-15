@@ -118,6 +118,15 @@ add_editor_style('css/editor-style.css');
              'before_title' => '<h3>',
              'after_title' => '</h3>',
          ));
+         register_sidebar(
+             array(
+             'name' => 'language-widget',
+             'id' => 'language-widget',
+             'before_widget' => '<section id="%1$s" class="widget %2$s">',
+             'after_widget' => '</section>',
+             'before_title' => '<h3>',
+             'after_title' => '</h3>',
+         ));
 
 ////////////////////////////////////////////////////////////////////
 // Register hook and action to set Main content area col-md- width based on sidebar declarations
@@ -177,4 +186,5 @@ echo '<span>'.$thumbnail_image[0]->post_excerpt.'</span>';
 }
 }
 require_once('wp_bootstrap_pagination.php');
+
 ?>
