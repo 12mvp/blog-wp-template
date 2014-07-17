@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-17 18:23+0200\n"
+"POT-Creation-Date: 2014-07-17 21:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,18 @@ msgstr ""
 
 #: 404.php:13
 msgid "Sorry This Page Does Not Exist!"
+msgstr ""
+
+#: comments.php:6 index.php:56
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:6 index.php:56
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:6 index.php:56
+msgid " Comments"
 msgstr ""
 
 #: footer.php:6
@@ -81,6 +93,16 @@ msgstr ""
 msgid "Linkedin"
 msgstr ""
 
+#: functions.php:64
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: index.php:40
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
 #: template-part-head.php:13
 msgid "Blog"
 msgstr ""
@@ -113,8 +135,24 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
+#: template-part-postmeta.php:9
+msgid "Edit"
+msgstr ""
+
 #: template-part-postmeta.php:10
 msgid "Posted In"
+msgstr ""
+
+#: template-part-topnav.php:11
+msgid "Search"
+msgstr ""
+
+#: theme-options.php:10 theme-options.php:19
+msgid "Template Options"
+msgstr ""
+
+#: theme-options.php:57
+msgid "Your Business Name"
 msgstr ""
 
 #: theme-options.php:243

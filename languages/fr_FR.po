@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: WorldCraze blog theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-16 22:27+0200\n"
-"PO-Revision-Date: 2014-07-17 18:27+0100\n"
+"PO-Revision-Date: 2014-07-17 21:08+0100\n"
 "Last-Translator: Hugo Defrance <hugo@worldcraze.com>\n"
 "Language-Team: WorldCraze team <dev@worldcraze.com>\n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,18 @@ msgstr ""
 #: 404.php:13
 msgid "Sorry This Page Does Not Exist!"
 msgstr "Désolé, cette page n'existe pas !"
+
+#: comments.php:6 index.php:56
+msgid "Leave a Comment"
+msgstr "Laisser un commentaire"
+
+#: comments.php:6 index.php:56
+msgid "One Comment"
+msgstr "Un commentaire"
+
+#: comments.php:6 index.php:56
+msgid " Comments"
+msgstr " commentaires"
 
 #: footer.php:6
 msgid "Localisation settings"
@@ -83,45 +95,71 @@ msgstr "Pinterest"
 msgid "Linkedin"
 msgstr "Linkedin"
 
-#: template-part-head.php:11
+#: functions.php:64
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: index.php:40
+#, php-format
+msgid "Permalink to %s"
+msgstr "Lien permanent vers %s"
+
+#: template-part-head.php:13
 msgid "Blog"
 msgstr "Blog"
 
-#: template-part-head.php:13
+#: template-part-head.php:15
 msgid "Tasks"
 msgstr "Tâches"
 
-#: template-part-head.php:15
+#: template-part-head.php:17
 msgid "Search an item"
 msgstr "Rechercher un produit"
 
-#: template-part-head.php:19
+#: template-part-head.php:21
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
-#: template-part-head.php:20
+#: template-part-head.php:22
 msgid "Add your travel"
 msgstr "Ajouter votre voyage"
 
-#: template-part-head.php:22
+#: template-part-head.php:24
 msgid "Log out"
 msgstr "Déconnexion"
 
-#: template-part-head.php:39
+#: template-part-head.php:41
 msgid "Subscribe now"
 msgstr "S'inscrire maintenant"
 
-#: template-part-head.php:40
+#: template-part-head.php:42
 msgid "Sign in"
 msgstr "Connectez-vous"
+
+#: template-part-postmeta.php:9
+msgid "Edit"
+msgstr "Modifier"
 
 #: template-part-postmeta.php:10
 msgid "Posted In"
 msgstr "Posté dans"
 
+#: template-part-topnav.php:11
+msgid "Search"
+msgstr "Rechercher"
+
+#: theme-options.php:10 theme-options.php:19
+msgid "Template Options"
+msgstr "Options du template"
+
+#: theme-options.php:57
+msgid "Your Business Name"
+msgstr "Nom de votre entreprise"
+
 #: theme-options.php:243
 msgid "Options Saved!"
-msgstr "Options enregistrées"
+msgstr "Options enregistrées !"
 
 #: theme-options.php:253
 msgid "Right Sidebar"
@@ -157,11 +195,13 @@ msgstr "Afficher la barre de navigation principale (logo/nom du site/etc.)"
 
 #: theme-options.php:287
 msgid "Show Post Meta"
-msgstr "Afficher les metadatas des posts"
+msgstr "Afficher les metadonnées des articles"
 
 #: theme-options.php:290
-msgid "Show Post Meta data (author, categ"
-msgstr "Afficher les metadatas des posts (auteur, categorie, date de création)"
+msgid "Show Post Meta data (author, category, date created)"
+msgstr ""
+"Afficher le contenu des metadonnées des articles (auteur, categorie, date de "
+"création)"
 
 #: theme-options.php:293
 msgid "Footer widget"

@@ -6,9 +6,9 @@
         <div class="container-fluid navbarsection">
             <!-- Brand and toggle get grouped for better mobile display -->
             <nav class="nav navbar-nav navbar-right">
-                        <form method="get" class="form-inline spaceforsearch" role="form" action="<?php bloginfo('home'); ?>/">
+                        <form method="get" class="form-inline spaceforsearch" role="form" action="<?php echo esc_url( home_url( '/' )); ?>">
                             <div class="form-group">
-                                <input type="text" class="form-control searchbar" placeholder="Search" value="<?php echo esc_html($s, 1); ?>" name="s" id="s">
+                                <input type="text" class="form-control searchbar" placeholder="<?php _e( 'Search', 'devdmbootstrap3' )?>" value="<?php echo esc_html($s, 1); ?>" name="s" id="s">
                             </div>
 
                             <div class="form-group">
