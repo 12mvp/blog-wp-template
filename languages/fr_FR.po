@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WorldCraze blog theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-16 22:27+0200\n"
+"PO-Revision-Date: 2014-07-17 18:27+0100\n"
+"Last-Translator: Hugo Defrance <hugo@worldcraze.com>\n"
+"Language-Team: WorldCraze team <dev@worldcraze.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: 404.php:13
+msgid "Sorry This Page Does Not Exist!"
+msgstr "Désolé, cette page n'existe pas !"
+
+#: footer.php:6
+msgid "Localisation settings"
+msgstr "Paramètres de localisation"
+
+#: footer.php:27
+msgid "WorldCraze.com in English"
+msgstr "WorldCraze.com in English"
+
+#: footer.php:33
+msgid "Society"
+msgstr "Société"
+
+#: footer.php:36
+msgid "Who are we?"
+msgstr "Qui sommes-nous ?"
+
+#: footer.php:37
+msgid "FAQ"
+msgstr "FAQ"
+
+#: footer.php:38
+msgid "Customs"
+msgstr "Douanes"
+
+#: footer.php:39
+msgid "Our rules"
+msgstr "Nos règles"
+
+#: footer.php:40
+msgid "Terms and conditions"
+msgstr "Conditions Générales d'utilisation"
+
+#: footer.php:46
+msgid "Follow us"
+msgstr "Suivez-nous"
+
+#: footer.php:49
+msgid "Twitter"
+msgstr "Twitter"
+
+#: footer.php:50
+msgid "Facebook"
+msgstr "Facebook"
+
+#: footer.php:51
+msgid "Google +"
+msgstr "Google +"
+
+#: footer.php:52
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: footer.php:53
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: footer.php:54
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: template-part-head.php:11
+msgid "Blog"
+msgstr "Blog"
+
+#: template-part-head.php:13
+msgid "Tasks"
+msgstr "Tâches"
+
+#: template-part-head.php:15
+msgid "Search an item"
+msgstr "Rechercher un produit"
+
+#: template-part-head.php:19
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: template-part-head.php:20
+msgid "Add your travel"
+msgstr "Ajouter votre voyage"
+
+#: template-part-head.php:22
+msgid "Log out"
+msgstr "Déconnexion"
+
+#: template-part-head.php:39
+msgid "Subscribe now"
+msgstr "S'inscrire maintenant"
+
+#: template-part-head.php:40
+msgid "Sign in"
+msgstr "Connectez-vous"
+
+#: template-part-postmeta.php:10
+msgid "Posted In"
+msgstr "Posté dans"
+
+#: theme-options.php:243
+msgid "Options Saved!"
+msgstr "Options enregistrées"
+
+#: theme-options.php:253
+msgid "Right Sidebar"
+msgstr "Barre latérale droite"
+
+#: theme-options.php:256
+msgid "Show the Right Sidebar"
+msgstr "Afficher la barre latérale droite"
+
+#: theme-options.php:259
+msgid "Right Sidebar Size"
+msgstr "Taille de la barre latérale droite"
+
+#: theme-options.php:267
+msgid "Left Side Bar"
+msgstr "Barre latérale gauche"
+
+#: theme-options.php:270
+msgid "Show the Left Sidebar"
+msgstr "Afficher la barre latérale gauche"
+
+#: theme-options.php:273
+msgid "Left Sidebar Size"
+msgstr "Taille de la barre latérale gauche"
+
+#: theme-options.php:281
+msgid "Show Header"
+msgstr "Afficher la barre de navigation"
+
+#: theme-options.php:284
+msgid "Show The Main Header in the Template (logo/sitename/etc.)"
+msgstr "Afficher la barre de navigation principale (logo/nom du site/etc.)"
+
+#: theme-options.php:287
+msgid "Show Post Meta"
+msgstr "Afficher les metadatas des posts"
+
+#: theme-options.php:290
+msgid "Show Post Meta data (author, categ"
+msgstr "Afficher les metadatas des posts (auteur, categorie, date de création)"
+
+#: theme-options.php:293
+msgid "Footer widget"
+msgstr "Widget du footer"
+
+#: theme-options.php:296
+msgid "Override footer facebook widget"
+msgstr "Surcharger le widget Facebook du footer"
+
+#: theme-options.php:299
+msgid "Init facebook"
+msgstr "Initialiser facebook"
+
+#: theme-options.php:302
+msgid "Initialize facebook"
+msgstr "Initialiser facebook"
+
+#: wp_bootstrap_pagination.php:57
+msgid "First"
+msgstr "Premier"
+
+#: wp_bootstrap_pagination.php:60
+msgid "previous"
+msgstr "précédent"
+
+#: wp_bootstrap_pagination.php:75
+msgid "next"
+msgstr "suivant"
+
+#: wp_bootstrap_pagination.php:79
+msgid "Last"
+msgstr "Dernier"

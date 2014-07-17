@@ -20,11 +20,6 @@
   border-style: none !important;
 }
 
-.noneborder-button:hover
-{
-  border: none !important;
-}
-
 .spaceforsearch {
   margin-top: 7px;
 }
