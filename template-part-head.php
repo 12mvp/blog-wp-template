@@ -10,7 +10,7 @@ if (isset($_COOKIE["ui"])) {
       <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header"><a class="navbar-brand" href="https://worldcraze.com">WorldCraze</a></div><!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/"><i class="glyphicon glyphicon-edit"></i> <?php _e('Blog', 'devdmbootstrap3'); ?></a></li>
+          <li><a href="/"><i class="glyphicon glyphicon-book"></i> Guide</a></li>
           <li class="divider-vertical"></li>
           <li><a href="https://worldcraze.com/tasks"><i class="glyphicon glyphicon-edit"></i> <?php _e('Tasks', 'devdmbootstrap3'); ?></a></li>
           <li class="divider-vertical"></li>
@@ -38,6 +38,8 @@ if (isset($_COOKIE["ui"])) {
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div>
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="/"><i class="glyphicon glyphicon-book"></i> Guide</a></li>
+          <li class="divider-vertical"></li>
           <li><a href="https://worldcraze.com/signup"><?php _e('Subscribe now', 'devdmbootstrap3'); ?></a></li>
           <li><a href="https://worldcraze.com/connexion"><?php _e('Sign in', 'devdmbootstrap3'); ?></a></li>
   </ul>
