@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo esc_attr(get_bloginfo('description')); ?>" />
     <title><?php wp_title('&laquo;', true, 'right'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='//fonts.googleapis.com/css?family=Exo+2|Cookie' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Exo+2:400,700,800|Cookie" rel="stylesheet" type="text/css">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="css/stylesheet/less" type="text/css" href="footer.less" />
